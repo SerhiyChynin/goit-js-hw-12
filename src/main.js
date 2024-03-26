@@ -41,7 +41,6 @@ refs.form.addEventListener('submit', onFormSubmit);
 refs.btnLoadMore.addEventListener('click', loadMore);
 
 async function onFormSubmit(event) {
-    refs.gallery.innerHTML = '';
     event.preventDefault();
     refs.btnLoadMore.classList.add('hidden');
   if (query === event.target.elements.query.value.trim()) {
